@@ -18,7 +18,7 @@ mongoose.connect(
 );
 
 app.get("/", async (_req, res) => {
-  console.log("Listando...");
+  console.log("Listando chanchitos ...");
   const animales = await Animal.find();
   return res.send(animales);
 });
@@ -29,4 +29,4 @@ app.get("/crear", async (_req, res) => {
   return res.send("ok");
 });
 
-app.listen(3000, () => console.log("listening..."));
+app.listen(3000, () => console.log("listening oli..."));
